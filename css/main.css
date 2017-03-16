@@ -1,0 +1,733 @@
+/* line 5, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* @import 'settings'; */
+/* line 5, ../sass/main.scss */
+.app {
+  overflow: hidden;
+}
+
+/*header*/
+/* line 9, ../sass/main.scss */
+header {
+  font-family: 'Roboto', sans-serif;
+  color: #354343;
+  padding: 35px 0 17px 0;
+}
+/* line 13, ../sass/main.scss */
+header .container {
+  padding-left: 0;
+  padding-right: 4px;
+}
+/* line 17, ../sass/main.scss */
+header .container .row .logo {
+  text-decoration: none;
+}
+/* line 19, ../sass/main.scss */
+header .container .row .logo img {
+  padding-top: 10px;
+  margin-right: 5px;
+}
+/* line 24, ../sass/main.scss */
+header .container .row span {
+  font-size: 13px;
+  letter-spacing: -0.15px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
+}
+/* line 31, ../sass/main.scss */
+header .container .row .header_contacts {
+  padding-right: 0;
+}
+/* line 35, ../sass/main.scss */
+header .container .row .header_contacts ul li a {
+  color: #354343;
+  text-decoration: none;
+}
+/* line 38, ../sass/main.scss */
+header .container .row .header_contacts ul li a img {
+  margin-right: 9px;
+}
+/* line 43, ../sass/main.scss */
+header .container .row .header_contacts ul li:first-child a {
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+/* line 50, ../sass/main.scss */
+header .container .row .header_contacts ul li:nth-child(2) a {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: right;
+  display: block;
+  padding-right: 9px;
+  margin-bottom: 5px;
+}
+/* line 58, ../sass/main.scss */
+header .container .row .header_contacts ul li:last-child a {
+  font-size: 13px;
+  display: inline-block;
+  float: right;
+  border-bottom: 1px dotted;
+  margin-right: 8px;
+}
+
+/*menu*/
+/* line 73, ../sass/main.scss */
+.wr-menu {
+  font-family: 'Vida 31 PRO', sans-serif;
+  font-size: 15px;
+  color: #354343;
+  letter-spacing: 0.3px;
+  border-top: 1px solid #e8e8e8;
+}
+/* line 79, ../sass/main.scss */
+.wr-menu .container {
+  padding-left: 0;
+  /*Mobile menu*/
+}
+/* line 81, ../sass/main.scss */
+.wr-menu .container .menu {
+  padding-left: 0;
+}
+/* line 84, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li {
+  display: inline-block;
+  position: relative;
+  margin-left: -5px;
+  /* &:first-child {
+  	a {
+  		span {
+  			
+  		}
+  	}
+  } */
+}
+/* line 88, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li .dropdown-inside {
+  padding: 0;
+  position: absolute;
+  left: -9999px;
+  border: 1px solid #e8e8e8;
+  border-top: 2px solid #72b13a;
+  z-index: 1000;
+}
+/* line 95, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li .dropdown-inside li {
+  display: block;
+  margin-left: 0;
+  width: 240px;
+}
+/* line 99, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li .dropdown-inside li a {
+  padding: 14px 0 12px 24px;
+  text-transform: none;
+  width: 100%;
+}
+/* line 104, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li .dropdown-inside li:nth-child(odd) {
+  background: #f7f7f7;
+}
+/* line 107, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li .dropdown-inside li:nth-child(even) {
+  background: #ffffff;
+}
+/* line 110, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li .dropdown-inside li:hover {
+  background: #72b13a;
+}
+/* line 112, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li .dropdown-inside li:hover a {
+  padding-left: 25px;
+}
+/* line 117, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li:hover .dropdown-inside {
+  display: block;
+  left: -1px;
+}
+/* line 122, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li a {
+  color: #354343;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 17px 0 15px 0;
+}
+/* line 128, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li a span {
+  border-right: 1px solid #e8e8e8;
+  padding: 5px 23px 3px 23px;
+}
+/* line 132, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li a:hover {
+  background: #72b13a;
+  margin-right: 1px;
+  margin-left: -1px;
+}
+/* line 136, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li a:hover span {
+  border: none;
+  padding-left: 24px;
+}
+/* line 148, ../sass/main.scss */
+.wr-menu .container .menu .dropdown li:last-child a span {
+  border: none;
+}
+/* line 157, ../sass/main.scss */
+.wr-menu .container .wr-mobmenu {
+  font-family: 'Vida 31 PRO', sans-serif;
+  font-size: 15px;
+  color: #354343;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  display: none;
+  width: 100%;
+}
+/* line 166, ../sass/main.scss */
+.wr-menu .container .wr-mobmenu .spoiler-small {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 25px;
+}
+/* line 171, ../sass/main.scss */
+.wr-menu .container .wr-mobmenu .spoiler-small .fa {
+  color: #354343;
+}
+/* line 175, ../sass/main.scss */
+.wr-menu .container .wr-mobmenu .subMenu {
+  background: #fafafa;
+  border-radius: 3px;
+  width: 100%;
+  display: none;
+}
+/* line 180, ../sass/main.scss */
+.wr-menu .container .wr-mobmenu .subMenu .spoiler {
+  padding-right: 3px;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 3px;
+}
+/* line 188, ../sass/main.scss */
+.wr-menu .container .wr-mobmenu .subMenu .spoiler-body {
+  display: none;
+}
+/* line 190, ../sass/main.scss */
+.wr-menu .container .wr-mobmenu .subMenu .spoiler-body ul {
+  padding-bottom: 15px;
+}
+/* line 192, ../sass/main.scss */
+.wr-menu .container .wr-mobmenu .subMenu .spoiler-body ul li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 195, ../sass/main.scss */
+.wr-menu .container .wr-mobmenu .subMenu .spoiler-body ul li a {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/*slider*/
+/* line 208, ../sass/main.scss */
+.wr-slider {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #354343;
+  z-index: 2;
+}
+/* line 213, ../sass/main.scss */
+.wr-slider .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 216, ../sass/main.scss */
+.wr-slider .container-fluid .slide {
+  background: url(../images/bg-slider.png) center top no-repeat;
+  background-size: cover;
+  padding: 187px 0 218px 24px;
+}
+/* line 220, ../sass/main.scss */
+.wr-slider .container-fluid .slide h2 {
+  font-family: 'Vida 33 PRO', sans-serif;
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+/* line 225, ../sass/main.scss */
+.wr-slider .container-fluid .slide p {
+  font-weight: 300;
+  line-height: 20px;
+  padding-left: 2px;
+  padding-right: 80px;
+  margin-bottom: 40px;
+}
+/* line 232, ../sass/main.scss */
+.wr-slider .container-fluid .slide a {
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
+  background: #354343;
+  padding: 12px 34px 10px 31px;
+  margin-left: 4px;
+}
+/* line 240, ../sass/main.scss */
+.wr-slider .container-fluid .slide a:hover {
+  background: #1e2525;
+}
+
+/*serials*/
+/* line 250, ../sass/main.scss */
+.wr-serials {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #354343;
+  padding-top: 30px;
+  padding-bottom: 48px;
+}
+/* line 256, ../sass/main.scss */
+.wr-serials .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 259, ../sass/main.scss */
+.wr-serials .container .proff_seria, .wr-serials .container .home_seria {
+  border: 1px solid #e8e8e8;
+  position: relative;
+  display: flex;
+  height: 145px;
+}
+/* line 264, ../sass/main.scss */
+.wr-serials .container .proff_seria .proff_info, .wr-serials .container .home_seria .proff_info {
+  position: absolute;
+  padding-left: 18px;
+  top: -14px;
+}
+/* line 268, ../sass/main.scss */
+.wr-serials .container .proff_seria .proff_info h2, .wr-serials .container .home_seria .proff_info h2 {
+  font-family: 'Vida 33 PRO', sans-serif;
+  font-size: 24px;
+  display: inline-block;
+  background: #ffffff;
+  padding: 0 12px 0 10px;
+  margin-bottom: 15px;
+}
+/* line 276, ../sass/main.scss */
+.wr-serials .container .proff_seria .proff_info p, .wr-serials .container .home_seria .proff_info p {
+  font-weight: 300;
+  padding-left: 11px;
+  padding-right: 160px;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+/* line 283, ../sass/main.scss */
+.wr-serials .container .proff_seria .proff_info a, .wr-serials .container .home_seria .proff_info a {
+  font-weight: 300;
+  color: #354343;
+  text-decoration: none;
+  padding-left: 10px;
+}
+/* line 288, ../sass/main.scss */
+.wr-serials .container .proff_seria .proff_info a img, .wr-serials .container .home_seria .proff_info a img {
+  vertical-align: middle;
+  padding-left: 7px;
+}
+/* line 292, ../sass/main.scss */
+.wr-serials .container .proff_seria .proff_info a:hover, .wr-serials .container .home_seria .proff_info a:hover {
+  text-decoration: underline;
+}
+/* line 297, ../sass/main.scss */
+.wr-serials .container .proff_seria .icon_products, .wr-serials .container .home_seria .icon_products {
+  position: absolute;
+  right: 42px;
+  bottom: -3px;
+}
+/* line 308, ../sass/main.scss */
+.wr-serials .container .home_seria .proff_info {
+  padding-left: 21px;
+}
+/* line 310, ../sass/main.scss */
+.wr-serials .container .home_seria .proff_info p {
+  padding-right: 180px;
+}
+
+/*Mobile menu*/
+/* line 317, ../sass/main.scss */
+.wr-mobmenu {
+  display: none;
+}
+
+/* line 320, ../sass/main.scss */
+.wr-slider2 {
+  margin-bottom: 30px;
+  padding: 19px 0 19px 0;
+  background: url("../images/bg-slider2.png") center center no-repeat;
+  background-size: cover;
+  /* position: relative;
+  top: -41px; */
+}
+/* line 329, ../sass/main.scss */
+.wr-slider2 .slide1 p {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 11px;
+  line-height: 28px;
+  margin-bottom: 128px;
+}
+/* line 338, ../sass/main.scss */
+.wr-slider2 .slide1 a {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  border: 2px solid #009acf;
+  border-radius: 5px;
+  padding: 9px 113px;
+}
+/* line 347, ../sass/main.scss */
+.wr-slider2 .slide1 figure {
+  padding: 7px 0 0 28px;
+}
+/* line 351, ../sass/main.scss */
+.wr-slider2 .customNavigation {
+  position: absolute;
+  bottom: 17px;
+  right: 14px;
+  border: 2px solid #009acf;
+  border-radius: 3px;
+}
+/* line 357, ../sass/main.scss */
+.wr-slider2 .customNavigation a {
+  padding: 7px 15px 5px 15px;
+}
+/* line 359, ../sass/main.scss */
+.wr-slider2 .customNavigation a i {
+  color: #ffffff;
+  font-size: 24px;
+}
+/* line 364, ../sass/main.scss */
+.wr-slider2 .customNavigation .btn-line {
+  position: absolute;
+  right: 50%;
+  top: 0px;
+  height: 42px;
+  width: 3px;
+  float: left;
+  background-color: #009acf;
+}
+
+/*Responsive design*/
+@media all and (max-width: 1199px) {
+  /* line 379, ../sass/main.scss */
+  header .container .row .header_contacts ul li:first-child a {
+    padding-left: 50px;
+  }
+
+  /* line 380, ../sass/main.scss */
+  .wr-menu .container .menu .dropdown li a span {
+    padding: 5px 15px 3px 15px;
+  }
+
+  /* line 381, ../sass/main.scss */
+  .wr-menu .container .menu .dropdown li a:hover span {
+    padding-left: 16px;
+  }
+}
+@media all and (max-width: 991px) {
+  /* line 384, ../sass/main.scss */
+  header .container .row .header_contacts ul li:first-child a {
+    padding-left: 61px;
+  }
+
+  /* line 385, ../sass/main.scss */
+  header .container .row .header_contacts ul li:nth-child(2) a {
+    padding-right: 7px;
+  }
+
+  /* line 386, ../sass/main.scss */
+  .wr-slider .container-fluid .slide {
+    padding: 140px 0 120px 24px;
+  }
+
+  /* line 387, ../sass/main.scss */
+  .wr-slider .container-fluid .slide p {
+    padding-right: 35%;
+  }
+
+  /* line 388, ../sass/main.scss */
+  .wr-menu {
+    height: 35px;
+    position: relative;
+    z-index: 9999;
+  }
+
+  /* line 389, ../sass/main.scss */
+  .wr-menu .container .menu {
+    display: none;
+  }
+
+  /* line 390, ../sass/main.scss */
+  .wr-menu .container .wr-mobmenu {
+    display: block;
+  }
+
+  /* line 391, ../sass/main.scss */
+  .wr-serials .container .proff_seria, .wr-serials .container .home_seria {
+    margin: 0 10px 116px 10px;
+  }
+
+  /* line 392, ../sass/main.scss */
+  .wr-serials .container .home_seria {
+    margin: 0 10px;
+  }
+
+  /* line 393, ../sass/main.scss */
+  .wr-serials .container .home_seria .proff_info {
+    right: 17px;
+    text-align: right;
+  }
+
+  /* line 397, ../sass/main.scss */
+  .wr-serials .container .proff_seria .proff_info p, .wr-serials .container .home_seria .proff_info p {
+    padding-right: 50%;
+  }
+
+  /* line 398, ../sass/main.scss */
+  .wr-serials .container .home_seria .proff_info p {
+    padding-right: 0;
+    padding-left: 50%;
+  }
+
+  /* line 402, ../sass/main.scss */
+  .wr-serials .container .home_seria .icon_products {
+    left: 42px;
+  }
+}
+@media all and (max-width: 767px) {
+  /* line 405, ../sass/main.scss */
+  header .container .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* line 409, ../sass/main.scss */
+  header .container .row .header_contacts ul li:first-child a {
+    padding-left: 0px;
+    padding-right: 7px;
+  }
+}
+@media all and (max-width: 655px) {
+  /* line 415, ../sass/main.scss */
+  header .container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* line 420, ../sass/main.scss */
+  header {
+    padding-top: 10px;
+  }
+
+  /* line 421, ../sass/main.scss */
+  header .container .row .header_contacts {
+    padding-top: 15px;
+  }
+
+  /* line 422, ../sass/main.scss */
+  header .container .row .header_contacts ul li:first-child a {
+    margin-bottom: 8px;
+  }
+
+  /* line 423, ../sass/main.scss */
+  header .container .row .header_contacts ul li:nth-child(2) a {
+    text-align: center;
+  }
+
+  /* line 424, ../sass/main.scss */
+  header .container .row .header_contacts ul li:last-child a {
+    float: none;
+    margin-left: 50px;
+  }
+
+  /* line 428, ../sass/main.scss */
+  header .container .row .logotype {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* line 432, ../sass/main.scss */
+  header .container .row span {
+    text-align: center;
+  }
+}
+@media all and (max-width: 582px) {
+  /* line 436, ../sass/main.scss */
+  .wr-serials .container .proff_seria .proff_info p, .wr-serials .container .home_seria .proff_info p {
+    padding-right: 31%;
+  }
+
+  /* line 437, ../sass/main.scss */
+  .wr-serials .container .home_seria .proff_info p {
+    padding-right: 0;
+    padding-left: 33%;
+  }
+}
+@media all and (max-width: 530px) {
+  /* line 443, ../sass/main.scss */
+  .wr-slider .container-fluid .slide h2 {
+    font-size: 36px;
+  }
+
+  /* line 446, ../sass/main.scss */
+  .wr-slider .container-fluid .slide {
+    background: url(../images/bg-slider2.png) center top no-repeat;
+    background-size: cover;
+    padding: 90px 0 60px 0;
+  }
+
+  /* line 451, ../sass/main.scss */
+  .wr-slider .container-fluid .slide p {
+    font-weight: 500;
+  }
+}
+@media all and (max-width: 507px) {
+  /* line 454, ../sass/main.scss */
+  .wr-slider .container-fluid .slide p {
+    padding-right: 35%;
+  }
+}
+@media all and (max-width: 470px) {
+  /* line 457, ../sass/main.scss */
+  .wr-serials {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  /* line 458, ../sass/main.scss */
+  .wr-serials .container .proff_seria, .wr-serials .container .home_seria, .wr-serials .container .home_seria {
+    height: 185px;
+  }
+
+  /* line 459, ../sass/main.scss */
+  .wr-serials .container .proff_seria .icon_products figure img, .wr-serials .container .home_seria .icon_products figure img,
+  .wr-serials .container .home_seria .icon_products figure img {
+    height: 165px;
+  }
+
+  /* line 461, ../sass/main.scss */
+  .wr-serials .container .proff_seria, .wr-serials .container .home_seria {
+    margin: 25px 10px 35px 10px;
+  }
+
+  /* line 462, ../sass/main.scss */
+  .wr-serials .container .home_seria {
+    margin: 0 10px;
+  }
+}
+@media all and (max-width: 408px) {
+  /* line 465, ../sass/main.scss */
+  .wr-slider .container-fluid .slide h2 {
+    font-size: 24px;
+  }
+
+  /* line 466, ../sass/main.scss */
+  .wr-slider .container-fluid .slide {
+    padding: 30px 0 50px 24px;
+  }
+
+  /* line 467, ../sass/main.scss */
+  .wr-slider .container-fluid .slide a {
+    padding: 9px 20px 9px 20px;
+  }
+}
+@media all and (max-width: 360px) {
+  /* line 470, ../sass/main.scss */
+  .wr-serials .container .proff_seria .proff_info h2, .wr-serials .container .home_seria .proff_info h2,
+  .wr-serials .container .home_seria .proff_info h2 {
+    font-size: 20px;
+  }
+
+  /* line 472, ../sass/main.scss */
+  .wr-serials .container .proff_seria .icon_products, .wr-serials .container .home_seria .icon_products {
+    right: 20px;
+  }
+
+  /* line 473, ../sass/main.scss */
+  .wr-serials .container .home_seria .icon_products {
+    left: 20px;
+  }
+}
+/* line 475, ../sass/main.scss */
+.app {
+  min-width: 320px;
+}

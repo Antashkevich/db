@@ -1,0 +1,20 @@
+
+$mysprite-layout:smart;
+@import "icons/*.png";
+@include all-icons-sprites;
+
+$icons: ('facebook','instagram','location','mail','odnoklassniki','phone','vkontakte');
+
+@each $icons in $icons {
+ .icons-#{$icons} {
+  display: inline-block;
+  position: relative;
+  width: icons-sprite-width(#{$icons});
+  height: icons-sprite-height(#{$icons});
+  
+  vertical-align: top;
+  display: -moz-inline-stack;
+  zoom: 1;
+        *display: inline;
+ }
+}
